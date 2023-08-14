@@ -1,0 +1,49 @@
+/* 
+  Voici le détail du besoin exprimé :
+    Un en-tête présentera les différentes colonnes, à savoir : la catégorie, le type de produit, la quantité disponible et son prix au kg
+    Les données de cet en-tête seront représentées sur un fond gris, écrites en gras
+    Les catégories identiques seront regroupées pour plus de lisibilité
+    L'ensemble des données présentes doit être intégré au tableau
+    Les catégories seront écrites en italique
+    Le tableau devra être lisible : présence de bordures, espacement visuel des informations... C'est à votre appréciation.
+*/
+
+body {
+  font-family: lato;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  text-align: center;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table { 
+  border-collapse: collapse;
+  width: 100%; 
+}
+th {
+  background-color: grey;
+  font-weight: 600;
+  color: seashell;
+}
+td {
+  border-bottom: 1px solid slategrey;
+  padding: .4rem; margin: auto;
+}
+td[rowspan] {
+  font-style: italic;
+}
